@@ -146,7 +146,7 @@ const dataKelas = [
             { nama: "Anas Abujabir", ttl: "Bogor, 01 November 2007", alamat: "Bogor", ig: "@yuyyyhhyyy", quote: "2024" },
             { nama: "Arditya Bima Pradana", ttl: "Bogor, 21 Mei 2007", alamat: "Bogor", ig: "@bbimardtya", quote: "Long as the outcome is income -Drake" },
             { nama: "Arif Zacky Arham El Marom", ttl: "Bogor, 25 April 2008", alamat: "Bogor", ig: "@rifzckyy", quote: "people will never forget how you made them feel." },
-            { nama: "Audi Budi Anira ", alamat:"Bogor", ig:"audianira", quote:"Beauty is pain"},
+            { nama: "Audi Budi Anira ", alamat:"Bogor", ig:"audianira", quote:"You dont have to be sorry for leaving and growing up"},
             { nama: "Azka Adila Istiantie", ttl: "Bogor, 04 November 2008", alamat: "Bogor", ig: "@_azkadila", quote: "If Mark Lee can chase his dreams, I guess I can chase mine too." },
             { nama: "Azrian Almirza Vhasa", ttl: "Grobogan, 12 April 2009", alamat: "Grobogan", ig: "@azrianvhasa", quote: "Es wird Wunder geben, wenn wir glauben" },
             { nama: "Bayu Crisnawan Daewangga Putra", ttl: "Klaten, 27 Maret 2008", alamat: "Klaten", ig: "@inii_bayyy", quote: "tetep berjuang untuk masa depan" },
