@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEN DELEGATION 2026 | SMAN 10 BOGOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <div id="loader" class="loading-screen">
+        <div class="loader-content">
+            <h1 class="gold-text">2026</h1>
+            <p>Loading Memories...</p>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content entry-anim"> 
+            <p class="hero-top-text">SMAN 10 BOGOR PRESENTS</p>
+            <h1 class="main-title">FERVENTERA ASTRAWIGUNA</h1>
+            
+            <p class="hero-description">
+                Angkatan yang bersemangat, berbudi, berakal, serta berguna bagi masyarakat
+            </p>
+
+            <p class="hero-sub-text">CLASS OF 2026</p>
+            <a href="#gallery" class="btn-explore">BUKA MEMORI</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+<main id="gallery">
+    <!-- TAMBAHAN: BAGIAN SAMBUTAN KETUA DAN WAKIL KETUA PANITIA (Sebelum Highlight Angkatan) -->
+    <div class="divider"><span>MESSAGE FROM CAPTAIN</span></div>
+    <div class="leader-message-container entry-anim">
+        <div class="leader-content-wrapper">
+            <div class="leader-photo">
+                <img src="img/ketuapanitia.jpg" alt="Ketua Panitia" onerror="this.src='https://via.placeholder.com/400x500'">
+            </div>
+            <div class="leader-text">
+                <h3>Sambutan Ketua & wakil ketua Panitia</h3>
+                <p>
+                    "Kita datang dengan mimpi masing-masing, dan pulang dengan cerita yang tak akan sama lagi. Tawa, lelah, jatuh, bangkit—semua jadi bagian yang membentuk kita hari ini.
+
+Terima kasih sudah saling menguatkan. Jika nanti langkah kita berbeda arah, ingatlah: kalau kita pernah berada di satu titik yang sama, saling percaya dan berjuang bersama.
+
+Sampai jumpa di versi terbaik diri kita masing-masing"
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight-container entry-anim">
+        <div class="highlight-frame">
+            <img src="img/angkatan.jpg" alt="TEN DELEGATION 2026" class="img-highlight" onerror="this.src='https://via.placeholder.com/1200x600'">
+            <div class="highlight-overlay">
+                <span class="gold-text">Ferventera Astrawiguna</span>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"><span>Organizations</span></div>
+    <div class="org-grid">
+        <div class="card-org">
+            <img src="img/osis.jpg">
+            <h3>OSIS</h3>
+        </div>
+        <div class="card-org">
+            <img src="img/mpk.jpg">
+            <h3>MPK</h3>
+        </div>
+    </div> 
+
+    <!-- TAMBAHAN: FOTO PANITIA DI BAWAH OSIS MPK[cite: 4, 5] -->
+    <div class="divider"><span>PANITIA ANGKATAN</span></div>
+    <div class="photo-gallery">
+        <div class="photo-item">
+            <img src="img/fotopanitia.jpg" alt="Foto Panitia Angkatan">
+            <h3>Panitia Ferventera Astrawiguna 2026</h3>
+        </div>
+    </div>
+
+    <!-- PENGHAPUSAN: Photo Gallery kosong yang tidak terpakai telah dihapus dari sini -->
+
+    <div class="divider"><span>Extracurriculars</span></div>
+    <div class="ekskul-grid" id="ekskulContainer"></div>
+
+        <div class="divider"><span>Class Gallery</span></div>
+        <div class="search-wrapper">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" placeholder="Cari kenangan kelas..." onkeyup="filterKelas()">
+            </div>
+        </div>
+
+        <div class="grid-kelas" id="kelasContainer"></div>
+    </main>
+
+    <footer style="text-align: center; padding: 100px 20px 60px; color: rgba(212,175,55,0.6); font-family: 'Montserrat', sans-serif;">
+    <div style="letter-spacing: 4px; font-size: 10px; margin-bottom: 8px; opacity: 0.7;">
+        SPECIAL THANKS TO EDITOR
+    </div>
+    <div style="font-size: 18px; letter-spacing: 6px; color: #d4af37; font-weight: bold; margin-bottom: 25px; text-transform: uppercase;">
+        Farrel Akbar Naufal Ramadhan & Nabil Asad Ahmad
+    </div>
+    <a href="https://instagram.com/farrelize" target="_blank" style="color: #d4af37; text-decoration: none; font-size: 13px; border: 1px solid rgba(212,175,55,0.3); padding: 12px 24px; border-radius: 50px; transition: all 0.4s ease; background: rgba(212,175,55,0.05); display: inline-flex; align-items: center; gap: 10px;">
+        <i class="fab fa-instagram"></i>
+        <span style="letter-spacing: 1px;">@farrelize</span>
+    </a>
+    <p style="margin-top: 40px; font-size: 9px; opacity: 0.4; letter-spacing: 2px;">
+        &copy; 2026 TEN DELEGATION - SMAN 10 BOGOR. ALL RIGHTS RESERVED.
+    </p>
+</footer>
+
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <h2 id="mTitle" class="modal-title-text gold-text"></h2>
+            
+            <div class="music-box">
+                <button id="musicToggle" onclick="toggleMusic()">
+                    <div class="icon-circle">
+                        <i id="speakerIcon" class="fas fa-volume-mute"></i>
+                    </div>
+                    <span>PLAY CLASS ANTHEM</span>
+                </button>
+                <audio id="player" loop></audio>
+            </div>
+
+            <img id="mMainImg" src="" class="img-glow-main">
+            
+            <div class="divider"><span>Student Members</span></div>
+            <div id="mStudents" class="student-grid"></div>
+
+            <div class="divider"><span>Group Collection</span></div>
+            <div id="mGroups" class="group-grid"></div>
+
+           
+        </div>
+    </div>
+
+    <div id="zoomModal" class="zoom-modal" onclick="closeZoom()">
+        <img id="zoomImg" src="">
+        <div class="zoom-info" onclick="event.stopPropagation()">
+            <h2 id="zoomName" class="gold-text"></h2>
+            <p id="zoomQuote"></p>
+            <div id="zoomBio" class="bio-details"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+<!-- ... kode lainnya ... -->
+
+    <!-- TARUH DI SINI (Di atas </body>) -->
+    <div id="ekskulModal" class="modal">
+        <span class="close-btn" onclick="closeEkskulModal()">&times;</span>
+        <div class="modal-content">
+            <h2 class="modal-title-text gold-text"></h2>
+            <img src="" class="img-glow-main" alt="Foto Ekskul">
+            <p class="modal-quote" style="text-align: center; font-size: 1.5rem; font-style: italic;"></p>
+        </div>
+    </div>
+
+    <!-- Biasanya tag script ada di bawah modal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
