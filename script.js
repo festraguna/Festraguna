@@ -362,7 +362,7 @@ const dataKelas = [
             { nama: "Fajar Satia Putra", ttl: "Bogor, 8 November 2006", alamat: "Bogor", ig: "@fajar_putrasatya", quote: "OKEH SINGKAT SAJA,SUKSES KEDEPANNYA" },
             { nama: "Firlly Agisna Nur'ali", ttl: "Bogor, 16 Agustus 2008", alamat: "Bogor", ig: "@firllyagsna_", quote: "About You. The 1975" },
             { nama: "Jian Fahrul Nasution", ttl: "Bogor, 10 Mei 2008", alamat: "Bogor",  quote: "ingin bahagiakan orangtua" }, 
-            { nama: "Kayren Anabillah", ttl: "Sukabumi, 5 Januari 2008", alamat: "Bogor", ig: "@kyrenabillah", quote: "i ain't a kid no more - Ivy, Frank Ocean" },
+            { nama: "Kayren Anabilah", ttl: "Sukabumi, 5 Januari 2008", alamat: "Bogor", ig: "@kyrenabilah", quote: "i ain't a kid no more - Ivy, Frank Ocean" },
             { nama: "Kezi Aurelia", ttl: "Tanjung Pinang, 17 Oktober 2007", alamat: "Tanjung Pinang", ig: "@__keauli.zzie", quote: "kezi sayang qeysha" },
             { nama: "Mozza Wilona Kaulika Badjideh", ttl: "Bandung,1 April 2008", alamat: "Bogor", ig: "@wilona_private", quote: "Amor Fati" },
             { nama: "Muhammad Abduh Muzaki Ramadhan", ttl: "Bogor, 9 Oktober 2007", alamat: "Bogor", ig: "@zkrmdhnn_", quote: "menyambut sukacita" },
